@@ -1,0 +1,23 @@
+<!--/**
+    * Simple Hello World Module 
+    *
+    * @category    QaisarSatti
+    * @package     QaisarSatti_HelloWorld
+    * @author      Muhammad Qaisar Satti
+    * @Email       qaisarssatti@gmail.com
+    *
+    */ -->
+
+    <?php 
+        $bestSeller =  $block->getBestSellerData(); ?>
+        <h1>Best Seller Collection.....</h1>
+        <ul>
+            <?php foreach ($bestSeller as $product) {
+                ?>
+                <li><?php echo $product->getName();?></li>
+            <?php } ?>
+        </ul>
+
+<?php if ($block->getPagerHtml()): ?>
+        <div class="order-products-toolbar toolbar bottom"><?php echo $block->getPagerHtml(); ?></div>
+    <?php endif ?>

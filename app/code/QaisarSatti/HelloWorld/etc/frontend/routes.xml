@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--/**
+    * Simple Hello World Module 
+    *
+    * @category    QaisarSatti
+    * @package     QaisarSatti_HelloWorld
+    * @author      Muhammad Qaisar Satti
+    * @Email       qaisarssatti@gmail.com
+    *
+    */ -->
+	 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+		<router id="standard">
+			<route id="bestseller" frontName="bestseller">
+				<module name="QaisarSatti_HelloWorld" />
+			</route>
+		</router>
+	</config>
